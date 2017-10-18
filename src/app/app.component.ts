@@ -20,27 +20,7 @@ export class AppComponent {
   lock: Auth0Lock;
 
   constructor(private store: Store<any>){
-    // const clientId = 'z1E5sIdRnScNnbF8NPdBNn9VAp2gvbX3';
-    // const domain = 'jongunter-test.auth0.com';
-    // const options = {
-    //   clientID:clientId,
-    //
-    // }
-    // this.lock = new Auth0Lock(clientId, domain);
-    // this.lock.on('authenticated', (authResult) => {
-    //   console.log(authResult);
-    //   this.lock.getUserInfo(
-    //     authResult.accessToken,
-    //     (error, profile) => {
-    //       if(error){
-    //         console.log('error', error);
-    //       } else {
-    //         console.log('login',profile);
-    //       }
-    //     }
-    //   );
-    // });
-    // this.counter = store.select('counter');
+  
     this.auth = new auth0.WebAuth({
       clientID: 'Qc6z1LKgJlS0EE7QexXW5knETotfaIdE',
       domain: 'jon-test.auth0.com',
