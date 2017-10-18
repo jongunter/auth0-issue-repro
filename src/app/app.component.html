@@ -1,0 +1,20 @@
+<h1>
+  {{title}}
+</h1>
+
+
+<button (click)="logIn()">Log In</button>
+
+<h2>Quick Redux Example</h2>
+<button class="btn btn-default" (click)="increment()">
+  <i class="fa fa-arrow-up"></i>
+  Increment
+</button>
+<div>Current Count: {{ counter | async }}</div>
+<button class="btn btn-default"  (click)="decrement()">Decrement</button>
+
+<button class="btn btn-default"  (click)="reset()">Reset Counter</button>
+
+
+<h2>Router test</h2>
+<router-outlet></router-outlet>
